@@ -1,0 +1,129 @@
+*Cara Clone*
+
+1.Buatlah sebuah folder yang ingin anda gunakan untuk mengcloning
+
+2.Setelah itu klik kiri pada folder tersebut lalu klik kanan dan pilih"GIT BASH HERE"
+
+3.Setelah melakukan tahap tersebut anda tinggal memasukan koding git clone dan link yang akan anda clone
+		           CONTOH:		
+
+	RPL 210@RPL210-03 MINGW32 /d/hasil_clone_git
+	$ git clone https://github.com/muhamadikhsann/CRUD-JAVA.git
+	Cloning into 'CRUD-JAVA'...
+	remote: Enumerating objects: 65, done.
+	remote: Counting objects: 100% (65/65), done.
+	remote: Compressing objects: 100% (40/40), done.
+	remote: Total 65 (delta 21), reused 59 (delta 20), pack-reused 0
+	Unpacking objects: 100% (65/65), done.
+
+4.Setelah itu tekan enter dan biarkan beberapa saat
+
+5.Lalu tinggal buka folder yang tadi anda buat dan lihat hasil clone anda
+
+6.Jika ada eror pastikan sinyal dan kode yang anda masukan benar 
+
+
+
+*Cara Push*
+
+1.Pililah folder yang ingin anda ingin "Push"
+
+2.Setelah itu pilih "GIT BASH HERE"
+
+3.Lalu anda tinggal masukan koding sebagai berikut:
+
+	$ git init 
+	setelah itu tekan ENTER lalu masukan koding berikutnya
+	$ git add * tekan ENTER lalu masukan koding berikutnya
+	$ git commit -m "(isi dengan comand yang anda ingin kan)" tekan ENTER lalu masukan koding berikutnya
+	$ git remote add origin dan link yang akan anda masukan,tekan ENTER lalu masukan koding terakhir
+	$ git push origin master dan tekan ENTER
+
+         			CONTOH:
+
+	RPL 210@RPL210-03 MINGW32 /d/CRUD_JAVA
+	$ git init
+	Initialized empty Git repository in D:/CRUD_JAVA/.git/
+	======================================================
+	
+
+	RPL 210@RPL210-03 MINGW32 /d/CRUD_JAVA (master)
+	$ git add *
+	warning: LF will be replaced by CRLF in Project/build/classes/dashboard/FrmUtama.form.
+	The file will have its original line endings in your working directory.
+	warning: LF will be replaced by CRLF in Project/build/classes/project/Form_login.form.
+	The file will have its original line endings in your working directory.
+	warning: LF will be replaced by CRLF in Project/build/classes/project/Frm_barang.form.
+	The file will have its original line endings in your working directory.
+	warning: LF will be replaced by CRLF in Project/src/dashboard/FrmUtama.form.
+	The file will have its original line endings in your working directory.
+	warning: LF will be replaced by CRLF in Project/src/dashboard/FrmUtama.java.
+	The file will have its original line endings in your working directory.
+	warning: LF will be replaced by CRLF in Project/src/project/Form_login.form.
+	The file will have its original line endings in your working directory.
+	warning: LF will be replaced by CRLF in Project/src/project/Form_login.java.
+	The file will have its original line endings in your working directory.
+	warning: LF will be replaced by CRLF in Project/src/project/Frm_barang.form.
+	The file will have its original line endings in your working directory.
+	warning: LF will be replaced by CRLF in Project/src/project/Frm_barang.java.
+	The file will have its original line endings in your working directory.
+	warning: LF will be replaced by CRLF in db_jbarang.sql.
+	The file will have its original line endings in your working directory.
+	========================================================================================
+
+	RPL 210@RPL210-03 MINGW32 /d/CRUD_JAVA (master)
+	$ git commit -m "CRUD-JAVA"
+	[master (root-commit) 56a6339] CRUD-JAVA
+ 	31 files changed, 2781 insertions(+)
+ 	create mode 100644 Project/build.xml
+ 	create mode 100644 Project/build/classes/.netbeans_automatic_build
+ 	create mode 100644 Project/build/classes/.netbeans_update_resources
+ 	create mode 100644 Project/build/classes/dashboard/FrmUtama$1.class
+ 	create mode 100644 Project/build/classes/dashboard/FrmUtama.class
+ 	create mode 100644 Project/build/classes/dashboard/FrmUtama.form
+ 	create mode 100644 Project/build/classes/koneksi/koneksi.class
+ 	create mode 100644 Project/build/classes/project/Form_login$1.class
+ 	create mode 100644 Project/build/classes/project/Form_login$2.class
+ 	create mode 100644 Project/build/classes/project/Form_login.class
+ 	create mode 100644 Project/build/classes/project/Form_login.form
+ 	create mode 100644 Project/build/classes/project/Frm_barang$1.class
+ 	create mode 100644 Project/build/classes/project/Frm_barang.class
+ 	create mode 100644 Project/build/classes/project/Frm_barang.form
+ 	create mode 100644 Project/build/classes/project/Project.class
+ 	create mode 100644 Project/manifest.mf
+ 	create mode 100644 Project/nbproject/build-impl.xml
+ 	create mode 100644 Project/nbproject/genfiles.properties
+ 	create mode 100644 Project/nbproject/private/private.properties
+ 	create mode 100644 Project/nbproject/private/private.xml
+ 	create mode 100644 Project/nbproject/project.properties
+ 	create mode 100644 Project/nbproject/project.xml
+ 	create mode 100644 Project/src/dashboard/FrmUtama.form
+ 	create mode 100644 Project/src/dashboard/FrmUtama.java
+ 	create mode 100644 Project/src/koneksi/koneksi.java
+ 	create mode 100644 Project/src/project/Form_login.form
+ 	create mode 100644 Project/src/project/Form_login.java
+ 	create mode 100644 Project/src/project/Frm_barang.form
+ 	create mode 100644 Project/src/project/Frm_barang.java
+ 	create mode 100644 Project/src/project/Project.java
+ 	create mode 100644 db_jbarang.sql
+	==================================================================
+
+	RPL 210@RPL210-03 MINGW32 /d/CRUD_JAVA (master)
+	$ git push origin master
+	Enumerating objects: 41, done.
+	Counting objects: 100% (41/41), done.
+	Delta compression using up to 4 threads.
+	Compressing objects: 100% (37/37), done.
+	Writing objects: 100% (41/41), 29.61 KiB | 2.47 MiB/s, done.
+	Total 41 (delta 7), reused 0 (delta 0)
+	remote: Resolving deltas: 100% (7/7), done.
+	To https://github.com/abedwicak/CRUD-JAVA.git
+ 	* [new branch]      master -> master
+	===================================================================
+
+4.Terakhir tinggal melihat akun github anda dan pastikan sudah masuk atau belum 
+
+
+
+
+	
